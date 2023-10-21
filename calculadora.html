@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora Simples</title>
+	</head>
+	<body>
+		<script>
+			var numero1 = parseFloat(prompt("Digite o primeiro numero:"));
+			var numero2 = parseFloat(prompt("Digite o segundo numero:"));
+			var operacao = prompt("Escolha uma operação (+, -, *, /):");
+
+			var resultado;
+
+			if(operacao === "+") {
+				resultado = numero1 + numero2;
+			} else if (operacao === "-") {
+				resultado = numero1 - numero2;
+			} else if (operacao === "*") {
+				resultado = numero1 * numero2;
+			} else if (operacao === "/") {
+				resultado = numero1 / numero2;
+			} else {
+				resultado = "Operação inválida";
+			}
+
+			alert("Resultado: " + resultado);
+		</script>
+	</body>
